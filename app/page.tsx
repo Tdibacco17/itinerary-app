@@ -14,6 +14,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { MapPinned } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
 
 const formatShortWeekdayDate = (date: Date) => {
   const weekday = new Intl.DateTimeFormat('es-ES', { weekday: 'short' }).format(date);
@@ -30,7 +32,7 @@ export default function Home() {
     <div className="space-y-6">
       {ItineraryData.map((item, index) => (
         <Card key={index} className="">
-          <CardHeader >
+          <CardHeader className="gap-0">
             <CardTitle className="justify-between items-center flex">
               <p className="text-base">
                 <span>
@@ -48,10 +50,21 @@ export default function Home() {
                 </p>}
             </CardTitle>
             {/* {item.subtitle && <p>{`${item.subtitle}`}</p>} */}
-            {(item.direction && item.type === 'hotel' || item.subtitle) &&
-              <CardDescription className="flex flex-col gap-2 pt-1">
-                {item.subtitle && <p className="font-normal leading-0 uppercase">{` ${item.subtitle}`}</p>}
-                {item.direction && <p className="italic">{`${item.direction}`}</p>}
+            {item.type === 'hotel' && (item.direction || item.subtitle) &&
+              <CardDescription className="pt-1">
+                <div className="flex justify-between items-start gap-3">
+                  <div className="flex flex-col justify-end h-full">
+                    {item.subtitle && <p className="font-normal uppercase">{` ${item.subtitle}`}</p>}
+                    {item.direction && <p className="italic">{`${item.direction}`}</p>}
+                  </div>
+                  {item.booking_link &&
+                    <Link href={item.booking_link} target="_blank" rel="noopener noreferrer"
+                      className={buttonVariants({
+                        size: 'icon', variant: 'secondary'
+                      })}>
+                      <MapPinned />
+                    </Link>}
+                </div>
               </CardDescription>}
           </CardHeader>
           <CardContent className="gap-6 flex flex-col w-full">

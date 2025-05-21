@@ -45,6 +45,7 @@ const ItineraryData: ItineraryInterface[] = [
         title: "Booking",
         subtitle: "The RomeHello",
         direction: 'Via Torino, 45, Estación de Termini, 00184 Roma, Italia',
+        booking_link: 'https://www.google.com.ar/maps/place/The+RomeHello/@41.9034099,12.4916498,17z/data=!4m11!3m10!1s0x132f61a8938be91d:0x6d111e2a0b5a632c!5m4!1s2025-08-27!2i7!4m1!1i2!8m2!3d41.9034059!4d12.4942247!16s%2Fg%2F11fzffcrj9?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
         exit: {
             day: new Date("2025-08-11T12:00:00"),
             hour: "14:00hs - 00:00hs",
@@ -134,6 +135,7 @@ const ItineraryData: ItineraryInterface[] = [
         title: "Booking",
         subtitle: "Hostel Beach House",
         direction: "Lungomare Regina Margherita 73, 98035 Giardini-Naxos, Italia",
+        booking_link: 'https://www.google.com.ar/maps/place/Lungomare+Regina+Margherita,+73,+98035+Giardini+Naxos+ME,+Italia/@37.8412763,15.2741911,17z/data=!3m1!4b1!4m11!3m10!1s0x131411b9ceb50e79:0x1dd555963a74178b!5m4!1s2025-08-27!2i7!4m1!1i2!8m2!3d37.8412722!4d15.279062!16s%2Fg%2F11pw1cp66n?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
         exit: {
             day: new Date("2025-08-17T12:00:00"),
             hour: "14:00hs - 21:00hs",
@@ -152,7 +154,7 @@ const ItineraryData: ItineraryInterface[] = [
                 link: 'https://www.google.com.ar/maps/dir/Lungomare+Regina+Margherita,+73,+98035+Giardini+Naxos+ME,+Italia/Taormina-Giardini,+via+98039,+Via+Nazionale,+43,+Villagonia+ME,+Italia/@37.8434352,15.2782397,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x131411b9ceb50e79:0x1dd555963a74178b!2m2!1d15.279062!2d37.8412722!1m5!1m1!1s0x131411bb714a12b1:0xaddbc6ef5eb904d3!2m2!1d15.2825673!2d37.8455579!3e2?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
             }
         ],
-        reminder:'Recordar que mi checkout tiene que ser mas temprano, debido a que tengo un vuelo 11:45hs y tengo el viaje en tren 06:32hs.'
+        reminder: 'Recordar que mi checkout tiene que ser mas temprano, debido a que tengo un vuelo 11:45hs y tengo el viaje en tren 06:32hs.'
     },
     {
         title: "Trainline",
@@ -222,7 +224,7 @@ const ItineraryData: ItineraryInterface[] = [
             {
                 text: "Caminar hasta el hotel - Seven Hostel & Rooms",
                 time: '15min aprox',
-                link: `https://www.google.com.ar/maps/place/Seven+Hostel/@40.6322675,14.3960042,17z/data=!3m1!5s0x133b985813faf16f:0xc4218386a0915f28!4m28!1m16!4m15!1m6!1m2!1s0x133b9943cb4d2843:0x1be6e6d334d09c4b!2sSant'Agnello,+N%C3%A1poles,+Italia!2m2!1d14.3951177!2d40.6296471!1m6!1m2!1s0x133b99407bd49901:0xe6148e063927c52c!2sVia+Iommella+Grande,+99,+80065+Sant'Agnello+NA,+Italia!2m2!1d14.4000995!2d40.635004!3e3!3m10!1s0x133b99407af51991:0x421b96838fa00519!5m4!1s2025-08-27!2i7!4m1!1i2!8m2!3d40.6348172!4d14.4002375!16s%2Fg%2F1tjj8kzw?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D`
+                link: 'https://www.google.com/maps/dir/40.6296660629601,+14.395103037939522/40.63508054990505,+14.400102832483611/@40.6323057,14.3960042,17z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1d14.395103!2d40.6296661!1m3!2m2!1d14.4001028!2d40.6350805?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
             }
         ],
     },
@@ -230,6 +232,7 @@ const ItineraryData: ItineraryInterface[] = [
         title: "Booking",
         subtitle: "Seven Hostel & Rooms",
         direction: "Via Iommella Grande 99, 80065 Sant'Agnello, Italia",
+        booking_link: 'https://www.google.com.ar/maps/place/Seven+Hostel/@40.6348212,14.3976626,17z/data=!4m11!3m10!1s0x133b99407af51991:0x421b96838fa00519!5m4!1s2025-08-27!2i7!4m1!1i2!8m2!3d40.6348172!4d14.4002375!16s%2Fg%2F1tjj8kzw?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
         exit: {
             day: new Date("2025-08-27T12:00:00"),
             hour: "15:00hs - 00:00hs",
@@ -250,6 +253,7 @@ interface ItineraryInterface {
     title: string
     subtitle?: string,
     direction?: string, //type hotel only
+    booking_link?: string,
     exit: {
         day: Date,
         hour: string,
