@@ -1,5 +1,7 @@
 const ItineraryData: ItineraryInterface[] = [
     {
+        id: 1,
+        check: false,
         title: "American Airlines",
         code: "WSNSIP",
         exit: {
@@ -22,6 +24,8 @@ const ItineraryData: ItineraryInterface[] = [
         }]
     },
     {
+        id: 2,
+        check: false,
         title: "Trainline",
         code: "RV 4623",
         exit: {
@@ -42,6 +46,8 @@ const ItineraryData: ItineraryInterface[] = [
         }],
     },
     {
+        id: 3,
+        check: false,
         title: "Booking",
         subtitle: "The RomeHello",
         direction: 'Via Torino, 45, Estación de Termini, 00184 Roma, Italia',
@@ -64,6 +70,8 @@ const ItineraryData: ItineraryInterface[] = [
         }],
     },
     {
+        id: 4,
+        check: false,
         title: "Trainline",
         code: "RV 4598",
         exit: {
@@ -82,6 +90,8 @@ const ItineraryData: ItineraryInterface[] = [
         }],
     },
     {
+        id: 5,
+        check: false,
         title: "Ryanair",
         code: "QMSL8Y",
         exit: {
@@ -110,6 +120,8 @@ const ItineraryData: ItineraryInterface[] = [
         }],
     },
     {
+        id: 6,
+        check: false,
         title: "Trainline",
         code: "RE 22112",
         exit: {
@@ -132,6 +144,8 @@ const ItineraryData: ItineraryInterface[] = [
         ],
     },
     {
+        id: 7,
+        check: false,
         title: "Booking",
         subtitle: "Hostel Beach House",
         direction: "Lungomare Regina Margherita 73, 98035 Giardini-Naxos, Italia",
@@ -157,6 +171,8 @@ const ItineraryData: ItineraryInterface[] = [
         reminder: 'Recordar que mi checkout tiene que ser mas temprano, debido a que tengo un vuelo 11:45hs y tengo el viaje en tren 06:32hs.'
     },
     {
+        id: 8,
+        check: false,
         title: "Trainline",
         code: "RE 12953",
         exit: {
@@ -183,6 +199,8 @@ const ItineraryData: ItineraryInterface[] = [
         ],
     },
     {
+        id: 9,
+        check: false,
         title: "Ryanair",
         code: "QUDJPD",
         exit: {
@@ -207,6 +225,8 @@ const ItineraryData: ItineraryInterface[] = [
         ],
     },
     {
+        id: 10,
+        check: false,
         title: "Curreri Viaggi",
         code: "155415-SVSAA-HJ",
         exit: {
@@ -229,6 +249,8 @@ const ItineraryData: ItineraryInterface[] = [
         ],
     },
     {
+        id: 11,
+        check: false,
         title: "Booking",
         subtitle: "Seven Hostel & Rooms",
         direction: "Via Iommella Grande 99, 80065 Sant'Agnello, Italia",
@@ -249,7 +271,8 @@ const ItineraryData: ItineraryInterface[] = [
 
 export default ItineraryData;
 
-interface ItineraryInterface {
+export interface ItineraryInterface {
+    id: number;
     title: string
     subtitle?: string,
     direction?: string, //type hotel only
@@ -277,6 +300,9 @@ interface ItineraryInterface {
     seat?: string,
     code?: string,
     suitcase?: string,
-    hand_luggage?: string
+    hand_luggage?: string,
+
+    //join con db
+    check: boolean
 }
 
