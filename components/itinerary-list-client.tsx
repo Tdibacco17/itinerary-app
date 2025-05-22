@@ -23,7 +23,7 @@ import ItineraryData, { ItineraryInterface } from "@/models/itinerary";
 import { ToggleButton } from '@/components/toggleButton';
 import { useGlobal } from '@/hooks/use-global';
 
-export default function ClientPage({ checksData }: { checksData: Record<number, boolean> }) {
+export default function ItineraryListClient({ checksData }: { checksData: Record<number, boolean> }) {
     const { data, setData } = useGlobal();
 
     React.useEffect(() => {
