@@ -66,7 +66,7 @@ const ItineraryData: ItineraryInterface[] = [
         next_action: [{
             text: "Caminar hasta el tren - Roma Termini",
             time: '10min aprox',
-            link: 'https://www.google.com.ar/maps/dir/The+RomeHello,+Via+Torino,+45,+00184+Roma+RM,+Italia/Estaci%C3%B3n+de+Roma+Termini,+Via+Giovanni+Giolitti,+40,+00185+Rome,+RM,+Italia/@41.9020193,12.4953252,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132f61a8938be91d:0x6d111e2a0b5a632c!2m2!1d12.4942144!2d41.9034019!1m5!1m1!1s0x132f61a439c0ffef:0xa4307dbef261a994!2m2!1d12.5015756!2d41.9012873!3e3?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
+            link: 'https://www.google.com.ar/maps/dir/The+RomeHello,+Via+Torino,+45,+00184+Roma+RM,+Italia/Estaci%C3%B3n+de+Roma+Termini,+Via+Giovanni+Giolitti,+40,+00185+Rome,+RM,+Italia/@41.9019104,12.4953252,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132f61a8938be91d:0x6d111e2a0b5a632c!2m2!1d12.4942144!2d41.9034019!1m5!1m1!1s0x132f61a439c0ffef:0xa4307dbef261a994!2m2!1d12.5015756!2d41.9012873!3e2?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
         }],
     },
     {
@@ -149,7 +149,7 @@ const ItineraryData: ItineraryInterface[] = [
         title: "Booking",
         subtitle: "Hostel Beach House",
         direction: "Lungomare Regina Margherita 73, 98035 Giardini-Naxos, Italia",
-        booking_link: 'https://www.google.com.ar/maps/place/Lungomare+Regina+Margherita,+73,+98035+Giardini+Naxos+ME,+Italia/@37.8412763,15.2741911,17z/data=!3m1!4b1!4m11!3m10!1s0x131411b9ceb50e79:0x1dd555963a74178b!5m4!1s2025-08-27!2i7!4m1!1i2!8m2!3d37.8412722!4d15.279062!16s%2Fg%2F11pw1cp66n?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
+        booking_link: 'https://www.google.com.ar/maps/place/Hostel+Beach+House/@37.8412696,15.27649,17z/data=!3m2!4b1!5s0x131411b9c93c28a7:0xb8592f30cbae752f!4m11!3m10!1s0x131411cfa9aecae9:0x39be55d9fa0d0d8c!5m4!1s2025-08-27!2i7!4m1!1i2!8m2!3d37.8412654!4d15.2790649!16s%2Fg%2F11s2jmh979?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
         exit: {
             day: new Date("2025-08-17T12:00:00"),
             hour: "14:00hs - 21:00hs",
@@ -165,7 +165,7 @@ const ItineraryData: ItineraryInterface[] = [
             {
                 text: "Caminar hasta el tren - Taormina-Giardini",
                 time: '9min aprox',
-                link: 'https://www.google.com.ar/maps/dir/Lungomare+Regina+Margherita,+73,+98035+Giardini+Naxos+ME,+Italia/Taormina-Giardini,+via+98039,+Via+Nazionale,+43,+Villagonia+ME,+Italia/@37.8434352,15.2782397,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x131411b9ceb50e79:0x1dd555963a74178b!2m2!1d15.279062!2d37.8412722!1m5!1m1!1s0x131411bb714a12b1:0xaddbc6ef5eb904d3!2m2!1d15.2825673!2d37.8455579!3e2?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
+                link: 'https://www.google.com.ar/maps/dir/Hostel+Beach+House,+Lungomare+Regina+Margherita,+Naxos,+Mesina,+Italia/Taormina-Giardini,+via+98039,+Via+Nazionale,+43,+Villagonia+ME,+Italia/@37.8434352,15.2782412,17z/data=!3m2!4b1!5s0x131411b9c93c28a7:0xb8592f30cbae752f!4m14!4m13!1m5!1m1!1s0x131411cfa9aecae9:0x39be55d9fa0d0d8c!2m2!1d15.2790649!2d37.8412654!1m5!1m1!1s0x131411bb714a12b1:0xaddbc6ef5eb904d3!2m2!1d15.2825673!2d37.8455579!3e2?hl=es&entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
             }
         ],
         reminder: 'Recordar que mi checkout tiene que ser mas temprano, debido a que tengo un vuelo 11:45hs y tengo el viaje en tren 06:32hs.'
@@ -195,6 +195,9 @@ const ItineraryData: ItineraryInterface[] = [
             {
                 text: "ALIBUS hasta el Aeropuerto de Catania (CTA)",
                 time: "20-25min aprox",
+            },
+                 {
+                text: "Buscar mi vuelo Ryanair",
             }
         ],
     },
@@ -220,7 +223,7 @@ const ItineraryData: ItineraryInterface[] = [
         next_action: [
             {
                 text: "Buscar shuttle Curreri Viaggi - 14:30hs",
-                link: 'https://www.google.com/maps/dir/Aeropuerto+Internacional+de+N%C3%A1poles,+Viale+F.+Ruffo+di+Calabria,+80144+Napoli+NA,+Italia/40.875493,14.283609/@40.8800805,14.2808351,16z/data=!3m1!4b1!4m8!4m7!1m5!1m1!1s0x133ba81e8986d9e3:0xbf48c58ba6c9356d!2m2!1d14.2891552!2d40.8846816!1m0?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
+                link: 'https://www.google.com/maps/dir/Aeropuerto+Internacional+de+N%C3%A1poles,+Viale+F.+Ruffo+di+Calabria,+80144+Napoli+NA,+Italia/40.875493,14.283609/@40.8800805,14.2808351,16z/data=!3m1!4b1!4m9!4m8!1m5!1m1!1s0x133ba81e8986d9e3:0xbf48c58ba6c9356d!2m2!1d14.2891552!2d40.8846816!1m0!3e2?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
             }
         ],
     },
@@ -231,12 +234,12 @@ const ItineraryData: ItineraryInterface[] = [
         code: "155415-SVSAA-HJ",
         exit: {
             day: new Date("2025-08-27T12:00:00"),
-            hour: "14:30",
+            hour: "14:30hs",
             text: "Aeropuerto Internacional de Nápoles",
         },
         arrival: {
             day: new Date("2025-08-27T12:00:00"),
-            hour: "aprox.",
+            hour: "15:45hs aprox.",
             text: "Sant'Agnello",
         },
         type: "bus",
@@ -244,7 +247,7 @@ const ItineraryData: ItineraryInterface[] = [
             {
                 text: "Caminar hasta el hotel - Seven Hostel & Rooms",
                 time: '15min aprox',
-                link: 'https://www.google.com/maps/dir/40.6296660629601,+14.395103037939522/40.63508054990505,+14.400102832483611/@40.6323057,14.3960042,17z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1d14.395103!2d40.6296661!1m3!2m2!1d14.4001028!2d40.6350805?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
+                link: 'https://www.google.com/maps/dir/40.629623644872126,+14.394888562904727/40.635150216844906,+14.400049714569814/@40.6323876,14.3948942,17z/data=!3m1!4b1!4m10!4m9!1m3!2m2!1d14.3948886!2d40.6296236!1m3!2m2!1d14.4000497!2d40.6351502!3e2?entry=ttu&g_ep=EgoyMDI1MDUxNS4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D'
             }
         ],
     },
