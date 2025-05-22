@@ -170,7 +170,7 @@ export default function ClientPage({ checksData }: { checksData: Record<number, 
                                                         {item.next_action.map((action, i) => (
                                                             <li key={i} className="list-disc">
                                                                 <p> {`${action.text}`}</p>
-                                                                {(action.time && action.link) ?
+                                                                {(action.link) ?
                                                                     <Link href={action.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 h-[30px] border-l-[2px] border-l-muted-foreground pl-3 mt-1">
                                                                         {action.link && <p className="underline text-blue-400">
                                                                             {`Ver recorrido`}
