@@ -113,7 +113,7 @@ export default function ClientPage({ checksData }: { checksData: Record<number, 
                                                     </p>
                                                 </div>
                                             </li>
-                                            <li className="list-disc flex justify-between relative">
+                                            <li className="list-disc">
                                                 <div className="flex flex-col">
                                                     <p className="capitalize text-muted-foreground italic">
                                                         {`${item.arrival.text}`}
