@@ -10,6 +10,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
+import SitesCityList from "@/components/sites-city-list";
 
 export default function Page() {
   return (
@@ -31,7 +32,7 @@ export default function Page() {
         </TabsContent>
 
         <TabsContent value="sites" className="px-4">
-          Change your password here.
+          <SitesCityList />
         </TabsContent>
 
       </Tabs>
