@@ -101,7 +101,7 @@ export default function ItineraryListClient({ checksData }: { checksData: Record
                                         <ul className="px-4 space-y-2 text-base w-full">
                                             <li className="list-disc">
                                                 <div className="flex flex-col">
-                                                    <p className="capitalize text-muted-foreground italic">
+                                                    <p className="capitalize text-sm text-muted-foreground italic">
                                                         {`${item.exit.text}`}
                                                     </p>
                                                     <p className="font-semibold">
@@ -116,7 +116,7 @@ export default function ItineraryListClient({ checksData }: { checksData: Record
                                             </li>
                                             <li className="list-disc">
                                                 <div className="flex flex-col">
-                                                    <p className="capitalize text-muted-foreground italic">
+                                                    <p className="capitalize text-muted-foreground text-sm italic">
                                                         {`${item.arrival.text}`}
                                                     </p>
                                                     <p className="font-semibold">

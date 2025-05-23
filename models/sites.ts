@@ -49,7 +49,7 @@ const SitesData: CitySites[] = [
                     {
                         id: 'palatino',
                         title: 'Monte Palatino',
-                        link: 'https://www.google.com/maps/place/Aventine+keyhole/@41.8880874,12.4750591,15z/data=!4m23!1m16!4m15!1m6!1m2!1s0x132f603357088aad:0xd3b1d08fc323ed98!2sMonte+Palatino,+Roma,+Italia!2m2!1d12.4833333!2d41.8833333!1m6!1m2!1s0x132f61b383a9cdef:0xfa914007c0ec7de6!2sForo+Romano,+00186+Roma+RM,+Italia!2m2!1d12.4864378!2d41.8920906!3e2!3m5!1s0x132f6033dfdd8327:0x59b13419e3f7e78!8m2!3d41.8829829!4d12.4784752!16s%2Fg%2F11fxzqg7ns?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
+                        link: 'https://www.google.com/maps/dir/Foro+Romano,+00186+Roma+RM,+Italia/Monte+Palatino,+00153+Roma,+Italia/@41.8878794,12.4803363,16z/data=!4m14!4m13!1m5!1m1!1s0x132f61b383a9cdef:0xfa914007c0ec7de6!2m2!1d12.4864378!2d41.8920906!1m5!1m1!1s0x132f603357088aad:0xd3b1d08fc323ed98!2m2!1d12.4833333!2d41.8833333!3e2?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
                         type: 'sitio histórico',
                         require_entry: true,
                         note: [

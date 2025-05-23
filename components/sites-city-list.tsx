@@ -58,7 +58,7 @@ export default function SitesCityList() {
                                                                 <div className="py-4 border-b flex flex-col">
                                                                     <div className="flex justify-between items-center gap-4">
                                                                         {group.isGrouped ? (
-                                                                            <p className="text-sm text-blue-400">
+                                                                            <p className="text-sm">
                                                                                 {group.title}
                                                                             </p>
                                                                         ) : (
@@ -98,7 +98,7 @@ export default function SitesCityList() {
                                                                                     href={group.link}
                                                                                     target="_blank"
                                                                                     rel="noopener"
-                                                                                    className="text-violet-400 underline text-xs w-fit h-[30px] leading-[20px] flex items-end"
+                                                                                    className="text-blue-400 underline text-xs w-fit h-[30px] leading-[20px] flex items-end"
                                                                                 >
                                                                                     Comprar
                                                                                 </Link>
@@ -116,7 +116,7 @@ export default function SitesCityList() {
                                                                                                 href={site.link}
                                                                                                 target="_blank"
                                                                                                 rel="noopener noreferrer"
-                                                                                                className="text-violet-400 text-sm w-fit leading-[30px]"
+                                                                                                className="text-blue-400 text-sm w-fit leading-[30px]"
                                                                                             >
                                                                                                 <p>{site.title}</p>
                                                                                             </Link>
