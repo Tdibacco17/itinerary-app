@@ -105,7 +105,7 @@ export default function ItineraryListClient({ checksData }: { checksData: Record
                                                         {`${item.exit.text}`}
                                                     </p>
                                                     <p className="font-semibold">
-                                                        <span className="capitalize">
+                                                        <span className="capitalize text-sm">
                                                             {`${formatShortWeekdayDate(item.exit.day)}`}
                                                         </span>
                                                         <span>
@@ -120,7 +120,7 @@ export default function ItineraryListClient({ checksData }: { checksData: Record
                                                         {`${item.arrival.text}`}
                                                     </p>
                                                     <p className="font-semibold">
-                                                        <span className="capitalize">
+                                                        <span className="capitalize text-sm">
                                                             {`${formatShortWeekdayDate(item.arrival.day)}`}
                                                         </span>
                                                         <span>
