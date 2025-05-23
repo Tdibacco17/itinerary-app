@@ -31,7 +31,7 @@ export default function Page() {
           </GlobalProvider>
         </TabsContent>
 
-        <TabsContent value="sites" className="px-4">
+        <TabsContent value="sites" className="">
           <SitesCityList />
         </TabsContent>
 
