@@ -84,7 +84,7 @@ export default function SitesCityList() {
                                                                         )}
                                                                     </div>
                                                                     {(group.note || group.price || group.link) && (
-                                                                        <div className="flex justify-between items-center">
+                                                                        <div className="flex justify-between items-center gap-4">
                                                                             <div className="flex flex-col">
                                                                                 {group.note?.map((n, i) => (
                                                                                     <p key={i} className="text-muted-foreground text-xs">{n}</p>
@@ -110,21 +110,23 @@ export default function SitesCityList() {
                                                                         <ul className="pl-4 mt-2 list-disc">
                                                                             {group.sites.map(site => (
                                                                                 <li key={site.id} className="py-1">
-                                                                                    {site.link ? (
-                                                                                        <Link
-                                                                                            href={site.link}
-                                                                                            target="_blank"
-                                                                                            rel="noopener noreferrer"
-                                                                                            className="text-violet-400 text-sm w-fit leading-[30px]"
-                                                                                        >
-                                                                                            <p>{site.title}</p>
-                                                                                        </Link>
-                                                                                    ) : (
-                                                                                        <p className="text-sm w-fit leading-[30px]">{site.title}</p>
-                                                                                    )}
-                                                                                    {site.note?.map((note, i) => (
-                                                                                        <p key={i} className="text-muted-foreground text-xs pl-2">{note}</p>
-                                                                                    ))}
+                                                                                    <div className="flex flex-col">
+                                                                                        {site.link ? (
+                                                                                            <Link
+                                                                                                href={site.link}
+                                                                                                target="_blank"
+                                                                                                rel="noopener noreferrer"
+                                                                                                className="text-violet-400 text-sm w-fit leading-[30px]"
+                                                                                            >
+                                                                                                <p>{site.title}</p>
+                                                                                            </Link>
+                                                                                        ) : (
+                                                                                            <p className="text-sm w-fit leading-[30px]">{site.title}</p>
+                                                                                        )}
+                                                                                        {site.note?.map((note, i) => (
+                                                                                            <p key={i} className="text-muted-foreground text-xs pl-2">{note}</p>
+                                                                                        ))}
+                                                                                    </div>
                                                                                 </li>
                                                                             ))}
                                                                         </ul>
