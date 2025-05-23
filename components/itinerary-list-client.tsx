@@ -57,7 +57,7 @@ export default function ItineraryListClient({ checksData }: { checksData: Record
                                         <span className="text-muted-foreground text-xs font-normal">
                                             {`Reserva - `}
                                         </span>
-                                        <span className="text-base">
+                                        <span className="text-sm">
                                             {`${item.code}`}
                                         </span>
                                     </p>}
