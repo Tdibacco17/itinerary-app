@@ -13,6 +13,7 @@ import SitesData
 import { MapPinned, Ticket } from "lucide-react";
 import Link from "next/link"
 import { buttonVariants } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 export default function SitesCityList() {
 
@@ -44,7 +45,7 @@ export default function SitesCityList() {
                                                         {`${category.title} ${category.date ? '- ' : ''}`}
                                                     </span>
                                                     {category.date &&
-                                                        <span className="text-orange-400 text-sm">
+                                                        <span className="text-green-400 text-sm">
                                                             {category.date}
                                                         </span>}
                                                 </p>
@@ -74,7 +75,12 @@ export default function SitesCityList() {
                                                                         )}
 
                                                                         {group.sites.some(s => s.require_entry) && (
-                                                                            <Ticket className="w-5 min-w-5 min-h-5 h-5 text-muted-foreground" />
+                                                                            <Ticket
+                                                                                className={cn("w-5 min-w-5 min-h-5 h-5",
+                                                                                    group.sites.some(s => s.have_ticket) ? "text-green-500" : "text-muted-foreground"
+                                                                                )}
+                                                                                // have_ticket
+                                                                            />
                                                                         )}
                                                                     </div>
                                                                     {(group.note || group.price || group.link) && (
@@ -101,9 +107,9 @@ export default function SitesCityList() {
                                                                     )}
 
                                                                     {group.isGrouped && (
-                                                                        <ul className="pl-4 mt-2 list-disc">
+                                                                        <ul className="pl-4 mt-2">
                                                                             {group.sites.map(site => (
-                                                                                <li key={site.id} className="py-1">
+                                                                                <li key={site.id} className="py-1 list-disc">
                                                                                     <div className="flex flex-col">
                                                                                         {site.link ? (
                                                                                             <Link
@@ -117,9 +123,12 @@ export default function SitesCityList() {
                                                                                         ) : (
                                                                                             <p className="text-sm w-fit leading-[30px]">{site.title}</p>
                                                                                         )}
-                                                                                        {site.note?.map((note, i) => (
-                                                                                            <p key={i} className="text-muted-foreground text-sm pl-2">{note}</p>
-                                                                                        ))}
+                                                                                        {site.note &&
+                                                                                            <div className="border-l-[2px] border-l-muted-foreground pl-3 mt-1">
+                                                                                                {site.note.map((note, i) => (
+                                                                                                    <p key={i} className="text-muted-foreground text-sm">{note}</p>
+                                                                                                ))}
+                                                                                            </div>}
                                                                                     </div>
                                                                                 </li>
                                                                             ))}

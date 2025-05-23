@@ -49,7 +49,7 @@ const SitesData: CitySites[] = [
                     {
                         id: 'palatino',
                         title: 'Monte Palatino',
-                        link: 'https://www.google.com/maps/place/Aventine+keyhole/@41.8840072,12.4775053,17.09z/data=!4m23!1m16!4m15!1m6!1m2!1s0x132f603357088aad:0xd3b1d08fc323ed98!2sMonte+Palatino,+Roma,+Italia!2m2!1d12.4833333!2d41.8833333!1m6!1m2!1s0x132f6033dfdd8327:0x59b13419e3f7e78!2sAventine+keyhole,+Piazza+dei+Cavalieri+di+Malta,+4,+00153+Roma+RM,+Italia!2m2!1d12.4784752!2d41.8829829!3e2!3m5!1s0x132f6033dfdd8327:0x59b13419e3f7e78!8m2!3d41.8829829!4d12.4784752!16s%2Fg%2F11fxzqg7ns?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
+                        link: 'https://www.google.com/maps/place/Aventine+keyhole/@41.8880874,12.4750591,15z/data=!4m23!1m16!4m15!1m6!1m2!1s0x132f603357088aad:0xd3b1d08fc323ed98!2sMonte+Palatino,+Roma,+Italia!2m2!1d12.4833333!2d41.8833333!1m6!1m2!1s0x132f61b383a9cdef:0xfa914007c0ec7de6!2sForo+Romano,+00186+Roma+RM,+Italia!2m2!1d12.4864378!2d41.8920906!3e2!3m5!1s0x132f6033dfdd8327:0x59b13419e3f7e78!8m2!3d41.8829829!4d12.4784752!16s%2Fg%2F11fxzqg7ns?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
                         type: 'sitio histórico',
                         require_entry: true,
                         note: [
@@ -59,7 +59,7 @@ const SitesData: CitySites[] = [
                     {
                         id: 'aventino',
                         title: 'Aventino + Ojo de la cerradura',
-                        link: 'https://www.google.com/maps/place/Aventine+keyhole/@41.8829829,12.4784752,15z/data=!4m14!1m7!3m6!1s0x132f603357088aad:0xd3c240c91e92c299!2sMonte+Aventino!8m2!3d41.8824826!4d12.4776405!16zL20vMHE0a2w!3m5!1s0x132f6033dfdd8327:0x59b13419e3f7e78!8m2!3d41.8829829!4d12.4784752!16s%2Fg%2F11fxzqg7ns?entry=ttu',
+                        link: 'https://www.google.com/maps/dir/Monte+Palatino,+Roma,+Italia/Aventine+keyhole,+Piazza+dei+Cavalieri+di+Malta,+4,+00153+Roma+RM,+Italia/@41.8838734,12.4796168,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132f603357088aad:0xd3b1d08fc323ed98!2m2!1d12.4833333!2d41.8833333!1m5!1m1!1s0x132f6033dfdd8327:0x59b13419e3f7e78!2m2!1d12.4784752!2d41.8829829!3e2?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
                         type: 'mirador',
                         note: [
                             'Mirador. Vista alineada: cúpula de San Pedro centrada en la cerradura.',
@@ -121,6 +121,7 @@ const SitesData: CitySites[] = [
                         link: 'https://www.google.com/maps/dir/Bas%C3%ADlica+de+San+Pedro,+Piazza+San+Pietro,+00120+Citt%C3%A0+del+Vaticano,+Ciudad+del+Vaticano/Museo+Vaticano,+00120+Citt%C3%A0+del+Vaticano,+Ciudad+del+Vaticano/@41.9046157,12.456918,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132f6061b7149b59:0x724bf077cd875283!2m2!1d12.4539367!2d41.9021667!1m5!1m1!1s0x132f6063839bc129:0xcfe0eca0526416b6!2m2!1d12.4536413!2d41.9064878!3e2?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
                         type: 'museo',
                         require_entry: true,
+                        have_ticket: true,
                         note: ['Para llegar hay que salir del recinto y dar la vuelta.']
                     },
                     {
@@ -174,7 +175,7 @@ const SitesData: CitySites[] = [
                     {
                         id: 'piazza-navona',
                         title: 'Piazza Navona',
-                        link: 'https://www.google.com/maps/dir/Plaza+Navona,+Piazza+Navona,+00186+Roma+RM,+Italia/Escaleras+de+la+Plaza+de+Espa%C3%B1a,+Piazza+di+Spagna,+00187+Roma+RM,+Italia/@41.9025806,12.4754446,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132f6083c19d1c3d:0xa35724562e82334a!2m2!1d12.4730742!2d41.8991633!1m5!1m1!1s0x132f60541678ae75:0x7fc0d4978aae690f!2m2!1d12.482775!2d41.90599!3e2?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
+                        link: 'https://www.google.com/maps/dir/Panteon+de+Roma,+Piazza+della+Rotonda,+Roma,+Italia/Plaza+Navona,+Piazza+Navona,+00186+Roma+RM,+Italia/@41.8990758,12.4736861,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x132f604f678640a9:0xcad165fa2036ce2c!2m2!1d12.4768729!2d41.8986108!1m5!1m1!1s0x132f6083c19d1c3d:0xa35724562e82334a!2m2!1d12.4730742!2d41.8991633!3e2?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D',
                         type: 'plaza',
                         orden: 3,
                     },
@@ -285,6 +286,7 @@ export interface Site {
     link?: string;
     type: string;
     require_entry?: boolean;
+    have_ticket?: boolean;
     note?: string[];
     price?: number;
     ticket_link?: string;
