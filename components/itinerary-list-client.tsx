@@ -43,7 +43,7 @@ export default function ItineraryListClient({ checksData }: { checksData: Record
                 const isCheck = item.check;
 
                 return (
-                    <Card key={item.id} className="">
+                    <Card key={item.id} className="bg-transparent border-b rounded-none">
                         <CardHeader className="gap-0">
                             <CardTitle className="justify-between items-center flex">
                                 <p className="text-base">

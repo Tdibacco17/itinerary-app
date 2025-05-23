@@ -10,7 +10,7 @@ import SitesData
     Site,
     SiteCategory
 } from "@/models/sites"
-import { MapPinned } from "lucide-react";
+import { MapPinned, Ticket } from "lucide-react";
 import Link from "next/link"
 import { buttonVariants } from "./ui/button";
 
@@ -41,13 +41,11 @@ export default function SitesCityList() {
                                             <AccordionTrigger>
                                                 <p>
                                                     <span>
-                                                        {`${category.title}
-                                                         ${category.subtitle ? '- ' : ''}`}
+                                                        {`${category.title} ${category.subtitle ? '- ' : ''}`}
                                                     </span>
                                                     {category.subtitle &&
                                                         <span className="text-muted-foreground text-xs">
-                                                            {`${category.subtitle}
-                                                             ${category.date ? '- ' : ''}`}
+                                                            {`${category.subtitle} ${category.date ? '- ' : ''}`}
                                                         </span>}
                                                     {category.date &&
                                                         <span className="text-orange-400 text-xs">
@@ -56,14 +54,14 @@ export default function SitesCityList() {
                                                 </p>
                                             </AccordionTrigger>
                                             <AccordionContent>
-                                                <ul className="px-4">
+                                                <ul className="px-4 mb-2 -mt-2">
                                                     {groupedSites.map((group, groupIndex) => {
                                                         return (
                                                             <li key={groupIndex} className="list-disc">
                                                                 <div className="py-2.5 border-b flex flex-col">
-                                                                    <div className="flex justify-between items-center">
+                                                                    <div className="flex justify-between items-center gap-4">
                                                                         {group.isGrouped ? (
-                                                                            <p className="text-sm leading-[30px] text-blue-400">
+                                                                            <p className="text-sm text-blue-400">
                                                                                 {group.title}
                                                                             </p>
                                                                         ) : (
@@ -71,7 +69,7 @@ export default function SitesCityList() {
                                                                                 href={group.sites[0].link}
                                                                                 target="_blank"
                                                                                 rel="noopener noreferrer"
-                                                                                className="text-blue-400 text-sm w-fit leading-[30px]"
+                                                                                className="text-blue-400 text-sm w-fit"
                                                                             >
                                                                                 {group.title}
                                                                             </Link> : <p>
@@ -80,15 +78,17 @@ export default function SitesCityList() {
                                                                         )}
 
                                                                         {group.sites.some(s => s.require_entry) && (
-                                                                            <p className="text-right text-muted-foreground text-xs">Necesita entrada</p>
+                                                                            <Ticket className="w-5 min-w-5 min-h-5 h-5 text-muted-foreground" />
                                                                         )}
                                                                     </div>
                                                                     {(group.note || group.price || group.link) && (
-                                                                        <div className="flex justify-between items-center gap-4">
+                                                                        <div className="flex justify-between items-start gap-4">
                                                                             <div className="flex flex-col">
-                                                                                {group.note?.map((n, i) => (
-                                                                                    <p key={i} className="text-muted-foreground text-xs">{n}</p>
-                                                                                ))}
+                                                                                {group.note && <div className="w-full pt-2">
+                                                                                    {group.note.map((n, i) => (
+                                                                                        <p key={i} className="text-muted-foreground text-xs">{n}</p>
+                                                                                    ))}
+                                                                                </div>}
                                                                                 {group.price && <p className="text-muted-foreground text-xs">{`Precio: €${group.price} aprox.`}</p>}
                                                                             </div>
                                                                             {group.link && (
