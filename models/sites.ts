@@ -6,13 +6,12 @@ const SitesData: CitySites[] = [
         array_sites: [
             {
                 title: 'Zona Coliseo - Foro - Palatino',
-                subtitle: 'Dia pesuti',
                 groups: [
                     {
                         id: 'coliseo-foro-palatino',
                         title: 'Coliseo + Foro Romano + Palatino',
                         site_ids: ['coliseo', 'foro-romano', 'palatino'],
-                        note: ['Entrada combinada válida por 24h - sacar ticket 8:30hs.'],
+                        note: ['Entrada combinada válida por 24hs.', 'Sacar ticket 8:30hs.'],
                         link: 'https://ticketing.colosseo.it/es/eventi/24h-colosseo-foro-romano-palatino/?t=2025-05-24',
                         price: 18,
                         orden: 1
@@ -90,7 +89,6 @@ const SitesData: CitySites[] = [
             },
             {
                 title: 'Zona Vaticano',
-                subtitle: 'Dia pesuti',
                 date: ' Miercoles 13 de agosto',
                 groups: [
                     {
@@ -149,7 +147,6 @@ const SitesData: CitySites[] = [
             },
             {
                 title: 'Centro histórico y plazas',
-                subtitle: 'Dia normal',
                 sites: [
                     {
                         id: 'panteon',
@@ -200,7 +197,6 @@ const SitesData: CitySites[] = [
             },
             {
                 title: 'Parques y miradores',
-                subtitle: 'Dia chill',
                 sites: [
                     {
                         id: 'galeria-borghese',
@@ -297,7 +293,6 @@ export interface Site {
 
 export interface SiteCategory {
     title: string;
-    subtitle?: string,
     date?: string,
     sites: Site[];
     groups?: SiteGroup[];

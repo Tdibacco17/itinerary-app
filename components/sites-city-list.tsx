@@ -41,24 +41,20 @@ export default function SitesCityList() {
                                             <AccordionTrigger>
                                                 <p>
                                                     <span>
-                                                        {`${category.title} ${category.subtitle ? '- ' : ''}`}
+                                                        {`${category.title} ${category.date ? '- ' : ''}`}
                                                     </span>
-                                                    {category.subtitle &&
-                                                        <span className="text-muted-foreground text-xs">
-                                                            {`${category.subtitle} ${category.date ? '- ' : ''}`}
-                                                        </span>}
                                                     {category.date &&
-                                                        <span className="text-orange-400 text-xs">
+                                                        <span className="text-orange-400 text-sm">
                                                             {category.date}
                                                         </span>}
                                                 </p>
                                             </AccordionTrigger>
                                             <AccordionContent>
-                                                <ul className="px-4 mb-2 -mt-2">
+                                                <ul className="px-4 mb-2 -mt-4">
                                                     {groupedSites.map((group, groupIndex) => {
                                                         return (
                                                             <li key={groupIndex} className="list-disc">
-                                                                <div className="py-2.5 border-b flex flex-col">
+                                                                <div className="py-4 border-b flex flex-col">
                                                                     <div className="flex justify-between items-center gap-4">
                                                                         {group.isGrouped ? (
                                                                             <p className="text-sm text-blue-400">
@@ -82,26 +78,24 @@ export default function SitesCityList() {
                                                                         )}
                                                                     </div>
                                                                     {(group.note || group.price || group.link) && (
-                                                                        <div className="flex justify-between items-start gap-4">
+                                                                        <div className="flex justify-between items-start gap-6">
                                                                             <div className="flex flex-col">
                                                                                 {group.note && <div className="w-full pt-2">
                                                                                     {group.note.map((n, i) => (
-                                                                                        <p key={i} className="text-muted-foreground text-xs">{n}</p>
+                                                                                        <p key={i} className="text-muted-foreground text-sm">{n}</p>
                                                                                     ))}
                                                                                 </div>}
-                                                                                {group.price && <p className="text-muted-foreground text-xs">{`Precio: €${group.price} aprox.`}</p>}
+                                                                                {group.price && <p className="text-muted-foreground text-sm">{`Precio: €${group.price} aprox.`}</p>}
                                                                             </div>
                                                                             {group.link && (
-                                                                                <div>
-                                                                                    <Link
-                                                                                        href={group.link}
-                                                                                        target="_blank"
-                                                                                        rel="noopener"
-                                                                                        className="text-violet-400 underline text-xs w-fit leading-[30px]"
-                                                                                    >
-                                                                                        Comprar
-                                                                                    </Link>
-                                                                                </div>
+                                                                                <Link
+                                                                                    href={group.link}
+                                                                                    target="_blank"
+                                                                                    rel="noopener"
+                                                                                    className="text-violet-400 underline text-xs w-fit h-[30px] leading-[20px] flex items-end"
+                                                                                >
+                                                                                    Comprar
+                                                                                </Link>
                                                                             )}
                                                                         </div>
                                                                     )}
@@ -124,7 +118,7 @@ export default function SitesCityList() {
                                                                                             <p className="text-sm w-fit leading-[30px]">{site.title}</p>
                                                                                         )}
                                                                                         {site.note?.map((note, i) => (
-                                                                                            <p key={i} className="text-muted-foreground text-xs pl-2">{note}</p>
+                                                                                            <p key={i} className="text-muted-foreground text-sm pl-2">{note}</p>
                                                                                         ))}
                                                                                     </div>
                                                                                 </li>

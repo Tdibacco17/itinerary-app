@@ -22,6 +22,7 @@ import { formatShortWeekdayDate } from "@/utils/formatShortWeekdayDate";
 import ItineraryData, { ItineraryInterface } from "@/models/itinerary";
 import { ToggleButton } from '@/components/toggleButton';
 import { useGlobal } from '@/hooks/use-global';
+import { cn } from '@/lib/utils';
 
 export default function ItineraryListClient({ checksData }: { checksData: Record<number, boolean> }) {
     const { data, setData } = useGlobal();
@@ -38,15 +39,15 @@ export default function ItineraryListClient({ checksData }: { checksData: Record
     if (!data) return null;
 
     return (
-        <div className="space-y-6">
+        <div className="">
             {data.map((item) => {
                 const isCheck = item.check;
 
                 return (
-                    <Card key={item.id} className="bg-transparent border-b rounded-none">
+                    <Card key={item.id} className={cn(!isCheck ? "" : "py-4", 'bg-transparent border-b rounded-none')}>
                         <CardHeader className="gap-0">
                             <CardTitle className="justify-between items-center flex">
-                                <p className="text-base">
+                                <p className={cn(!isCheck ? "text-base" : "text-sm")}>
                                     <span>
                                         {`${item.title}`}
                                     </span>
@@ -79,7 +80,7 @@ export default function ItineraryListClient({ checksData }: { checksData: Record
                                     </div>
                                 }
                                 {isCheck
-                                    && <div className='flex justify-between items-center w-full'>
+                                    && <div className='flex justify-between items-center w-full text-xs pb-1'>
                                         <div>
                                             <p className="capitalize text-muted-foreground italic">
                                                 {`${item.exit.text} - ${formatShortWeekdayDate(item.exit.day)} - ${item.exit.hour}`}
