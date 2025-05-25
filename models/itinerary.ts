@@ -264,7 +264,7 @@ const ItineraryData: ItineraryInterface[] = [
             text: "Check-in:",
         },
         arrival: {
-            day: new Date("2025-09-03"),
+            day: new Date("2025-09-03T12:00:00"),
             hour: "00:00hs - 10:30hs",
             text: "Check-out:",
         },
